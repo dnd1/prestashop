@@ -5,6 +5,7 @@ RUN	apt-get install -y \
 	php7.0-mysql \
 	php7.0-gd \
 	php7.0-zip \
+	php7.0-xml \
 	wget \
 	unzip \
 	nginx;
@@ -24,8 +25,10 @@ RUN cd /usr/share/nginx/html; \
 RUN  rm /etc/nginx/sites-enabled/default; \
 	 rm /etc/nginx/sites-available/default;
 
-COPY ./default-nginx.conf /etc/nginx/sites-enabled/default;
+COPY ./default /etc/nginx/sites-enabled
 
 # Launch
-RUN service php7.0-fpm start; \
-	service nginx restart;
+EXPOSE 80
+#CMD ["php7.0-fpm", "-R"]
+#CMD ["nginx", "-g", "daemon off;"]
+

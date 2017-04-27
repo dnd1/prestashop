@@ -1,0 +1,5 @@
+asdfasdf
+
+<?php
+
+echo phpinfo();
