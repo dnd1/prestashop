@@ -7,10 +7,11 @@ nginx:
     volumes:
         - ./default:/etc/nginx/sites-available/default
         - ./default:/etc/nginx/sites-enabled/default
-        #- ./logs/nginx-error.log:/var/log/nginx/error.log
-        #- ./logs/nginx-access.log:/var/log/nginx/access.log
+        - ./logs/nginx-error.log:/var/log/nginx/error.log
+        - ./logs/nginx-access.log:/var/log/nginx/access.log
+        - ./www:/usr/share/nginx/html
 phpfpm:
-    image: php:fpm
+    image: php-ext
     ports:
         - "9000:9000"
     volumes:
