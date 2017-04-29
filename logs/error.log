@@ -1,0 +1,83 @@
+2017/04/28 15:21:08 [emerg] 1#0: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:85
+2017/04/28 15:25:12 [emerg] 1#0: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:85
+2017/04/28 15:26:03 [emerg] 1#0: "fastcgi_pass" directive is duplicate in /etc/nginx/sites-enabled/default:87
+2017/04/28 21:23:12 [error] 5#0: *24 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:30:20 [error] 7#0: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.2:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:31:40 [error] 7#0: *17 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.2:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:36:22 [error] 5#0: *6 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:41:39 [error] 5#0: *19 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:56:11 [error] 5#0: *39 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/index.php?installDefaultData=true&_=1493416457109 HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
+2017/04/28 21:59:03 [error] 5#0: *49 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/index.php?installDefaultData=true&_=1493416621706 HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php?restart=true"
+2017/04/28 22:02:11 [error] 5#0: *57 upstream timed out (110: Connection timed out) while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/index.php?installDefaultData=true&_=1493416807574 HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php?restart=true"
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 11:50:52.030911 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 11:50:52.031807 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 11:51:17.936291 2017] [:error] [pid 15] [client 172.17.0.1:52748] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:02:21.301718 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:02:56.110406 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:02:56.111004 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:03:19.154832 2017] [:error] [pid 15] [client 172.17.0.1:52750] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:03:51.036127 2017] [:error] [pid 16] [client 172.17.0.1:52752] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:05:39.457072 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:07:28.101074 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:07:28.101743 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:08:15.040043 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:08:24.618778 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:08:24.619327 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:09:01.144114 2017] [:error] [pid 15] [client 172.17.0.1:52754] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:09:58.977321 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:09:58.978016 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:10:08.957515 2017] [:error] [pid 19] [client 172.17.0.1:52756] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:10:44.183253 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.17.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:14:46.674082 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:14:46.674669 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:15:01.973802 2017] [:error] [pid 15] [client 172.17.0.1:52758] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:21:19.836046 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:31:39.683990 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:31:39.684742 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:32:13.297530 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:32:21.064113 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:32:21.064740 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:33:03.001496 2017] [:error] [pid 17] [client 172.19.0.1:36362] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:04.796914 2017] [:error] [pid 17] [client 172.19.0.1:36362] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:27.815455 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:28.848236 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:29.767356 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:30.553729 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:31.221067 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:31.890029 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:32.566050 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:33.161472 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:33.803803 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:34.383585 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:34.971496 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:35.589068 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:36.185594 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:33:36.689989 2017] [:error] [pid 18] [client 172.19.0.1:36364] PHP Warning:  PDO::__construct(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /var/www/html/classes/db/DbPDO.php on line 64
+[Sat Apr 29 12:34:09.468153 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:36:14.498637 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:36:14.499292 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:36:48.162663 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.2. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:38:03.111913 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:38:03.113196 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:38:17.580512 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:38:37.301929 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:38:37.302691 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:39:32.015571 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:41:25.987433 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:41:25.988023 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 12:41:45.733077 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sat Apr 29 12:42:20.336836 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sat Apr 29 12:42:20.337380 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'

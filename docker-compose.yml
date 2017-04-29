@@ -1,25 +1,29 @@
-nginx:
-    image: tutum/nginx
-    ports:
+version: '2'
+
+services:
+    db:
+      image: mariadb
+      container_name: ps-db
+      volumes:
+        - ./db-data:/var/lib/mysql
+      environment:
+        MYSQL_USER: root
+        MYSQL_ROOT_PASSWORD: "admin"
+      ports:
+        - "3306:3306" 
+
+    prestashop:
+      image: prestashop/prestashop:1.6.1.12
+      container_name: ps
+      depends_on:
+        - db
+      ports:
         - "8080:80"
-    links:
-        - phpfpm
-    volumes:
-        - ./default:/etc/nginx/sites-available/default
-        - ./default:/etc/nginx/sites-enabled/default
-        - ./logs/nginx-error.log:/var/log/nginx/error.log
-        - ./logs/nginx-access.log:/var/log/nginx/access.log
-        - ./www:/usr/share/nginx/html
-phpfpm:
-    image: php-ext
-    ports:
-        - "9000:9000"
-    volumes:
-        - ./www:/usr/share/nginx/html
-mysql:
-  image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: admin
-  ports:
-    - "3306:3306" 
+      volumes:
+        - ./logs/error.log:/var/log/apache2/error.log
+        - ./logs/access.log:/var/log/apache2/access.log
+        - ./www:/var/www/html
+
+
+
 

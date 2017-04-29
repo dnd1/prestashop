@@ -1,4 +1,0 @@
-2017/04/28 15:21:08 [emerg] 1#0: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:85
-2017/04/28 15:25:12 [emerg] 1#0: open() "/etc/nginx/snippets/fastcgi-php.conf" failed (2: No such file or directory) in /etc/nginx/sites-enabled/default:85
-2017/04/28 15:26:03 [emerg] 1#0: "fastcgi_pass" directive is duplicate in /etc/nginx/sites-enabled/default:87
-2017/04/28 21:23:12 [error] 5#0: *24 FastCGI sent in stderr: "Primary script unknown" while reading response header from upstream, client: 172.17.0.1, server: _, request: "GET /install/sandbox/anything.php HTTP/1.1", upstream: "fastcgi://172.17.0.3:9000", host: "localhost:8080", referrer: "http://localhost:8080/install/index.php"
