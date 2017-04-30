@@ -10,18 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '1771145294590493cf3ba692-80393641',
-  'variables' => 
-  array (
-    'is_logged' => 0,
-    'link' => 0,
-    'telnumber' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_590493cf40d1b1_48765629',
+  'unifunc' => 'content_5905cce43f1745_61065049',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590493cf40d1b1_48765629')) {function content_590493cf40d1b1_48765629($_smarty_tpl) {?><div id="contact-link" >
+<?php if ($_valid && !is_callable('content_5905cce43f1745_61065049')) {function content_5905cce43f1745_61065049($_smarty_tpl) {?><div id="contact-link" >
 	<a href="http://localhost:8080/es/contactanos" title="Contacte con nosotros">Contacte con nosotros</a>
 </div>
 	<span class="shop-phone">

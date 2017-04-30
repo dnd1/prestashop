@@ -24,6 +24,9 @@ services:
         - ./logs/access.log:/var/log/apache2/access.log
         - ./www:/var/www/html
 
+        # Volumenes para los temas y modulos
+        - ./www/themes/bicishop:/var/www/html/themes/bicishop
+
 
 
 

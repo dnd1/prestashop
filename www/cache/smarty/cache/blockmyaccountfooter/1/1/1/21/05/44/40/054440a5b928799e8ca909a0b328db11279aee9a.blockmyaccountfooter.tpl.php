@@ -10,20 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '2032086023590493cee6d414-28902051',
-  'variables' => 
-  array (
-    'link' => 0,
-    'returnAllowed' => 0,
-    'voucherAllowed' => 0,
-    'HOOK_BLOCK_MY_ACCOUNT' => 0,
-    'is_logged' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_590493ceef1eb3_45677386',
+  'unifunc' => 'content_5905cce40e5856_83097817',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590493ceef1eb3_45677386')) {function content_590493ceef1eb3_45677386($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_5905cce40e5856_83097817')) {function content_5905cce40e5856_83097817($_smarty_tpl) {?>
 <!-- Block myaccount module -->
 <section class="footer-block col-xs-12 col-sm-4">
 	<h4><a href="http://localhost:8080/es/mi-cuenta" title="Administrar mi cuenta de cliente" rel="nofollow">Mi cuenta</a></h4>

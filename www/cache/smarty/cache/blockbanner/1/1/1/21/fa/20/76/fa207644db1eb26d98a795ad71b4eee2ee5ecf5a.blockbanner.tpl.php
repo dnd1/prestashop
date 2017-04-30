@@ -10,21 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '42921309590493cf270134-08047260',
-  'variables' => 
-  array (
-    'banner_link' => 0,
-    'force_ssl' => 0,
-    'base_dir_ssl' => 0,
-    'base_dir' => 0,
-    'banner_desc' => 0,
-    'banner_img' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_590493cf2d1585_92814088',
+  'unifunc' => 'content_5905cce42ebfc6_68720508',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_590493cf2d1585_92814088')) {function content_590493cf2d1585_92814088($_smarty_tpl) {?><a href="http://localhost:8080/" title="">
+<?php if ($_valid && !is_callable('content_5905cce42ebfc6_68720508')) {function content_5905cce42ebfc6_68720508($_smarty_tpl) {?><a href="http://localhost:8080/" title="">
 	<img class="img-responsive" src="http://localhost:8080/modules/blockbanner/img/sale70.png" alt="" title="" width="1170" height="65" />
 </a>
 <?php }} ?>

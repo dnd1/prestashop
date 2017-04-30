@@ -81,3 +81,24 @@ AH00558: apache2: Could not reliably determine the server's fully qualified doma
 AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
 [Sat Apr 29 12:42:20.336836 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
 [Sat Apr 29 12:42:20.337380 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sat Apr 29 13:48:19.411811 2017] [:error] [pid 25] [client 172.19.0.1:37046] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /var/www/html/controllers/admin/AdminThemesController.php on line 711, referer: http://localhost:8080/admin123/index.php?controller=AdminThemes&token=b26547ee97ab9546c84019f997cfc445
+[Sat Apr 29 14:26:50.373943 2017] [:error] [pid 23] [client 172.19.0.1:37424] PHP Warning:  array_key_exists() expects parameter 2 to be array, boolean given in /var/www/html/controllers/admin/AdminThemesController.php on line 711, referer: http://localhost:8080/admin123/index.php?controller=AdminThemes&token=b26547ee97ab9546c84019f997cfc445
+[Sun Apr 30 11:55:48.523636 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Apr 30 11:56:00.865024 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sun Apr 30 11:56:00.867007 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Apr 30 11:59:35.657527 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sun Apr 30 11:59:35.658259 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Apr 30 12:02:46.521399 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Apr 30 12:03:48.667310 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sun Apr 30 12:03:48.668124 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Apr 30 12:07:36.304486 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Apr 30 12:08:23.489760 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sun Apr 30 12:08:23.490509 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
+[Sun Apr 30 12:09:40.714477 2017] [mpm_prefork:notice] [pid 1] AH00169: caught SIGTERM, shutting down
+AH00558: apache2: Could not reliably determine the server's fully qualified domain name, using 172.19.0.3. Set the 'ServerName' directive globally to suppress this message
+[Sun Apr 30 12:11:15.635328 2017] [mpm_prefork:notice] [pid 1] AH00163: Apache/2.4.10 (Debian) configured -- resuming normal operations
+[Sun Apr 30 12:11:15.637222 2017] [core:notice] [pid 1] AH00094: Command line: 'apache2 -D FOREGROUND'
